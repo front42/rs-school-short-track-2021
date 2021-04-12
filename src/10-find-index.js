@@ -12,7 +12,12 @@
  *
  */
 function findIndex(array, value) {
-  return array.indexOf(value);
+  let result = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      result += i;
+    }
+  } return result;
 }
 
 module.exports = findIndex;
